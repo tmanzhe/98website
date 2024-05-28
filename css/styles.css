@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+}
+
+body {
+    background-color: #008080;
+    margin: 0px;
+    font-family: 'Inconsolata';
+}
+
+main {
+    /* Any main-specific styles */
+}
+
+.icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin: 30px;
+}
+
+.icon {
+    color: rgba(255, 255, 255, 0.825);
+    -webkit-text-stroke: 0.2px;
+    font-family: 'Inconsolata';
+    font-size: 13px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin-bottom: 25px; /* Space between icons */
+}
+
+.icon img {
+    margin-bottom: 5px; /* Add space between the image and text */
+    height: 35px; /* Set the image height */
+    width: 35px; /* Set the image width */
+}
+
+/* Specific adjustment for the Resume, Photos, and Mail icons */
+#resume {
+    margin-left: 10px; /* Adjust this value to shift the icon to the right */
+}
+
+#photos {
+    margin-left: 10px; /* Adjust this value to shift the icon to the right */
+}
+
+#mail {
+    margin-left: 10px; /* Adjust this value to shift the icon to the right */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c3c3c3;
+    color: white;
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-top: 3px solid white;
+}
+
+.start {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    border-radius: 10px;
+}
+
+.start img {
+    height: 25px;
+    width: 75px;
+}
+
+.start-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 40px; /* Position above the taskbar */
+    left: 0;
+    background-color: #c3c3c3;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.start-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.start-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.start-menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.start-menu ul li a:hover {
+    background-color: #e0e0e0;
+}
